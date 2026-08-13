@@ -2,3 +2,4 @@ telethon
 yt-dlp
 aiohttp
 beautifulsoup4
+requests
