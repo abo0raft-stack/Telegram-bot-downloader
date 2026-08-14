@@ -1,6 +1,12 @@
 telethon
-yt-dlp
 aiohttp
 beautifulsoup4
+google-play-scraper
+selectolax
+cryptography
+yt-dlp
+Pillow
+gdown
 requests
-urllib3
+hachoir
+moviepy
