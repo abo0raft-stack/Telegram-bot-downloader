@@ -1,12 +1,5 @@
-telethon
-aiohttp
-beautifulsoup4
-google-play-scraper
-selectolax
-cryptography
+Telethon
 yt-dlp
-Pillow
-gdown
 requests
 hachoir
 moviepy
