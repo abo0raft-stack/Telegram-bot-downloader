@@ -1,6 +1,11 @@
-Telethon
+telethon
+aiohttp
+beautifulsoup4
+selectolax
+cryptography
 yt-dlp
+Pillow
+gdown
 requests
 hachoir
-Pillow
-cryptg
+moviepy
