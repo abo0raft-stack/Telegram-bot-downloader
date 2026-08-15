@@ -9,3 +9,4 @@ gdown
 requests
 hachoir
 moviepy
+curl_cffi
