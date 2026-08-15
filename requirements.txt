@@ -3,3 +3,4 @@ yt-dlp
 requests
 hachoir
 moviepy
+Pillow
