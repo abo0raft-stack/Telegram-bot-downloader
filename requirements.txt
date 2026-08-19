@@ -10,3 +10,5 @@ requests
 hachoir
 moviepy
 curl_cffi
+gallery-dl
+aiosqlite
