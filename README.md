@@ -1,43 +1,31 @@
-# 🤖 Media Downloader & Server Manager Bot
+# Telegram-bot-downloader
 
-A feature-rich, high-performance Telegram bot built with Python for personal media downloading, video processing, and server monitoring.
+بوت تنزيل شخصي بلغة بايثون يعمل عبر Telethon؛ يستقبل روابط عبر تيليجرام ويقوم بتنزيل الوسائط من مصادر متعددة (YouTube, TikTok, Instagram, Dailymotion, روابط مباشرة، إلخ) ثم يرسلها إلى المحادثة بعد معالجة بسيطة (ffmpeg، إنشاء صور، تحويل الصيغ).
 
----
+## المتطلبات الأساسية
+- Python 3.10
+- ffmpeg (مطلوب لمعالجة الفيديو/استخراج صور مصغرة)
 
-## ⚠️ Disclaimer & Terms of Use
+## المتغيرات البيئية
+راجع `.env.example` في المستودع. المتغيرات الأساسية:
 
-> **Notice:** This repository and bot are strictly intended for **personal, private, and educational use only**.
-> - **Private Access:** Configured to operate in **Private Mode** for authorized users only.
-> - **Compliance:** This tool is designed to manage personal utilities and must not be used for commercial distribution, bypassing platform terms, or infringing copyrighted material.
+- API_ID
+- API_HASH
+- BOT_TOKEN
+- OWNER_ID
+- PORT
+- X_COOKIES_BASE64 (اختياري)
+- INSTAGRAM_COOKIES_BASE64 (اختياري)
 
----
+## كيف تشغّله
 
-## ✨ Features
+1) تشغيل محلي سريع
 
-- 📥 **Media Downloading:** High-speed downloads for audio and video content.
-- ✂️ **Video Trimming:** Built-in tools for precise video cutting and processing.
-- 🛠️ **System Monitoring:** Real-time checking of server resources (RAM, Storage, CPU).
-- ⚙️ **Custom Configuration:** On-the-fly dynamic setup via interactive bot commands.
-
----
-
-## 🕹️ Bot Commands
-
-### 🛠️ Server Management
-| Command | Description |
-| :--- | :--- |
-| `/df` | Inspect system storage, RAM usage, and server load. |
-| `/clean` | Clear temporary media files and system cache. |
-| `/restart` | Safely reboot the bot process. |
-
-### 🎬 Media & Tools
-| Command | Description |
-| :--- | :--- |
-| `/trim [start] [end] [link]` | Trim a video file by specifying start time, end time, and media URL. |
-| `/settings` | Open interactive configuration options. |
-
----
-
-## 🔒 Security & Privacy
-
-This project strictly enforces authentication checks to ensure that only designated Telegram IDs can interact with the bot and access host server execution tools.
+```bash
+python -m pip install -r requirements.txt
+# ضبط المتغيرات البيئية (يمكن نسخ .env.example إلى .env وملؤه)
+export API_ID=123456
+export API_HASH="your_api_hash"
+export BOT_TOKEN="123456:ABC-DEF..."
+export OWNER_ID=5414125521
+python bot.py
