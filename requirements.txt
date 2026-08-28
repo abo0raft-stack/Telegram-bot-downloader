@@ -3,13 +3,7 @@ aiohttp
 aiosqlite
 yt-dlp
 beautifulsoup4
-selectolax
-cryptography
 Pillow
-gdown
 requests
-hachoir
-moviepy
-curl_cffi
 gallery-dl
 psutil
