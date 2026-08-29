@@ -7,3 +7,4 @@ Pillow
 requests
 gallery-dl
 psutil
+curl_cffi
